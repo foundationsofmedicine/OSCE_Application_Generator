@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+     <title>OSCE Exam: 51368936</title>
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems);
+        });
+    </script>
+</head>
+<style>
+    .page-details{
+        margin: 20px
+    }
+    .prompts{
+        margin: auto
+    }
+</style>
+<body>
+    <!-- Code for Navigation bar -->
+    <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo right">Foundations of Clinical Medicine</a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="sass.html">Home</a></li>
+            <li><a href="badges.html">Basic Clinical Sciences</a></li>
+            <li><a href="collapsible.html">Clinical Medicine</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav>
+        <div class="nav-wrapper">
+          <div class="col s12">
+            <a href="../../.." class="breadcrumb">Foundations of Medicine</a>
+            <a href="../../" class="breadcrumb">Clinical Medicine</a>
+            <a href="../" class="breadcrumb">OSCE</a>
+            <a href="/" class="breadcrumb">51368936: Functional History of Rheumatoid Arthritis</a>
+          </div>
+        </div>
+      </nav>
+    <div class="page_details container">
+            <!-- Code for OSCE Identifier -->
+        <h1>OSCE ID: 51368936</h1>
+        <!-- Code for Student name -->
+        <input placeholder="Student Name" id="name" type="text" class="validate">
+        <label for="first_name"></label>
+        <!-- Code for toggle-able modal for QR code -->
+        <!-- Modal Trigger -->
+        <div class="prompts centre-align">
+            <a class="waves-effect waves-light btn modal-trigger" href="#prompt">Examinee prompt</a>
+            <a class="waves-effect waves-light btn modal-trigger" href="#actor_prompt">Actor prompt</a>
+        </div>
+        <br/>
+        <h4>Examination Criteria</h4>
+            <!-- Modal Structure -->
+            <div id="prompt" class="modal">
+                <div class="modal-content">
+                <h4>Examinee prompt</h4>
+                <img src="./prompt_qr.png" class="responsive-img">
+                </div>
+                <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Done</a>
+                </div>
+            </div>
+            <div id="actor_prompt" class="modal">
+                <div class="modal-content">
+                <h4>Actor prompt</h4>
+                <img src="./actor_prompt_qr.png" class="responsive-img">
+                </div>
+                <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Done</a>
+                </div>
+            </div>
+
+
+    <!-- Code for question list -->
+        <div class="criteria">
+            <ol class="criteria-list">
+                
+                <p><b><li class="crit">Introduces themselves to patient and gains consent</li></b></p>
+                <form action="#" class="criteria-form">
+                    <label>
+                        <input name="crit" type="radio" class="with-gap", id="0_Not-Attempted"/>
+                        <span>Not attempted</span>
+                    </label>
+                    <label>
+                        <input name="crit" type="radio" class="with-gap", id="0_Not-Satisfactory"  />
+                        <span>Not satisfactory</span>
+                    </label>
+                    <label>
+                        <input name="crit" type="radio" class="with-gap", id="0_Satisfactory" />
+                        <span>Satisfactory</span>
+                    </label>
+                    <label>
+                        <input name="crit" type="radio" class="with-gap", id="0_Better-than-expected"  />
+                        <span>Better than expected</span>
+                    </label>
+                </form>
+                </br>
+            <!-- Code for comments section -->
+            
+                <p><b><li class="crit">Elicits a short history of the problem (when the diagnosis was made, what were the presenting features, how has the disease progressed, has there been treatment)</li></b></p>
+                <form action="#" class="criteria-form">
+                    <label>
+                        <input name="crit" type="radio" class="with-gap", id="1_Not-Attempted"/>
+                        <span>Not attempted</span>
+                    </label>
+                    <label>
+                        <input name="crit" type="radio" class="with-gap", id="1_Not-Satisfactory"  />
+                        <span>Not satisfactory</span>
+                    </label>
+                    <label>
+                        <input name="crit" type="radio" class="with-gap", id="1_Satisfactory" />
+                        <span>Satisfactory</span>
+                    </label>
+                    <label>
+                        <input name="crit" type="radio" class="with-gap", id="1_Better-than-expected"  />
+                        <span>Better than expected</span>
+                    </label>
+                </form>
+                </br>
+            <!-- Code for comments section -->
+            
+                <p><b><li class="crit">Ask about other symptoms</li></b></p>
+                <form action="#" class="criteria-form">
+                    <label>
+                        <input name="crit" type="radio" class="with-gap", id="2_Not-Attempted"/>
+                        <span>Not attempted</span>
+                    </label>
+                    <label>
+                        <input name="crit" type="radio" class="with-gap", id="2_Not-Satisfactory"  />
+                        <span>Not satisfactory</span>
+                    </label>
+                    <label>
+                        <input name="crit" type="radio" class="with-gap", id="2_Satisfactory" />
+                        <span>Satisfactory</span>
+                    </label>
+                    <label>
+                        <input name="crit" type="radio" class="with-gap", id="2_Better-than-expected"  />
+                        <span>Better than expected</span>
+                    </label>
+                </form>
+                </br>
+            <!-- Code for comments section -->
+            
+                <p><b><li class="crit">Ask about difficulties with ADLs: (washing, dressing, bathing, stairs, telephone, opening doors, cooking, shopping)</li></b></p>
+                <form action="#" class="criteria-form">
+                    <label>
+                        <input name="crit" type="radio" class="with-gap", id="3_Not-Attempted"/>
+                        <span>Not attempted</span>
+                    </label>
+                    <label>
+                        <input name="crit" type="radio" class="with-gap", id="3_Not-Satisfactory"  />
+                        <span>Not satisfactory</span>
+                    </label>
+                    <label>
+                        <input name="crit" type="radio" class="with-gap", id="3_Satisfactory" />
+                        <span>Satisfactory</span>
+                    </label>
+                    <label>
+                        <input name="crit" type="radio" class="with-gap", id="3_Better-than-expected"  />
+                        <span>Better than expected</span>
+                    </label>
+                </form>
+                </br>
+            <!-- Code for comments section -->
+            
+                <p><b><li class="crit">Elicits the nature of his work</li></b></p>
+                <form action="#" class="criteria-form">
+                    <label>
+                        <input name="crit" type="radio" class="with-gap", id="4_Not-Attempted"/>
+                        <span>Not attempted</span>
+                    </label>
+                    <label>
+                        <input name="crit" type="radio" class="with-gap", id="4_Not-Satisfactory"  />
+                        <span>Not satisfactory</span>
+                    </label>
+                    <label>
+                        <input name="crit" type="radio" class="with-gap", id="4_Satisfactory" />
+                        <span>Satisfactory</span>
+                    </label>
+                    <label>
+                        <input name="crit" type="radio" class="with-gap", id="4_Better-than-expected"  />
+                        <span>Better than expected</span>
+                    </label>
+                </form>
+                </br>
+            <!-- Code for comments section -->
+            
+                <p><b><li class="crit">Clarifies the impact of functional limitation on his work</li></b></p>
+                <form action="#" class="criteria-form">
+                    <label>
+                        <input name="crit" type="radio" class="with-gap", id="5_Not-Attempted"/>
+                        <span>Not attempted</span>
+                    </label>
+                    <label>
+                        <input name="crit" type="radio" class="with-gap", id="5_Not-Satisfactory"  />
+                        <span>Not satisfactory</span>
+                    </label>
+                    <label>
+                        <input name="crit" type="radio" class="with-gap", id="5_Satisfactory" />
+                        <span>Satisfactory</span>
+                    </label>
+                    <label>
+                        <input name="crit" type="radio" class="with-gap", id="5_Better-than-expected"  />
+                        <span>Better than expected</span>
+                    </label>
+                </form>
+                </br>
+            <!-- Code for comments section -->
+            
+                <p><b><li class="crit">Enquires about his financial situation</li></b></p>
+                <form action="#" class="criteria-form">
+                    <label>
+                        <input name="crit" type="radio" class="with-gap", id="6_Not-Attempted"/>
+                        <span>Not attempted</span>
+                    </label>
+                    <label>
+                        <input name="crit" type="radio" class="with-gap", id="6_Not-Satisfactory"  />
+                        <span>Not satisfactory</span>
+                    </label>
+                    <label>
+                        <input name="crit" type="radio" class="with-gap", id="6_Satisfactory" />
+                        <span>Satisfactory</span>
+                    </label>
+                    <label>
+                        <input name="crit" type="radio" class="with-gap", id="6_Better-than-expected"  />
+                        <span>Better than expected</span>
+                    </label>
+                </form>
+                </br>
+            <!-- Code for comments section -->
+            
+                <p><b><li class="crit">Explores family and social support</li></b></p>
+                <form action="#" class="criteria-form">
+                    <label>
+                        <input name="crit" type="radio" class="with-gap", id="7_Not-Attempted"/>
+                        <span>Not attempted</span>
+                    </label>
+                    <label>
+                        <input name="crit" type="radio" class="with-gap", id="7_Not-Satisfactory"  />
+                        <span>Not satisfactory</span>
+                    </label>
+                    <label>
+                        <input name="crit" type="radio" class="with-gap", id="7_Satisfactory" />
+                        <span>Satisfactory</span>
+                    </label>
+                    <label>
+                        <input name="crit" type="radio" class="with-gap", id="7_Better-than-expected"  />
+                        <span>Better than expected</span>
+                    </label>
+                </form>
+                </br>
+            <!-- Code for comments section -->
+            
+                <p><b><li class="crit">Summarizes accurately</li></b></p>
+                <form action="#" class="criteria-form">
+                    <label>
+                        <input name="crit" type="radio" class="with-gap", id="8_Not-Attempted"/>
+                        <span>Not attempted</span>
+                    </label>
+                    <label>
+                        <input name="crit" type="radio" class="with-gap", id="8_Not-Satisfactory"  />
+                        <span>Not satisfactory</span>
+                    </label>
+                    <label>
+                        <input name="crit" type="radio" class="with-gap", id="8_Satisfactory" />
+                        <span>Satisfactory</span>
+                    </label>
+                    <label>
+                        <input name="crit" type="radio" class="with-gap", id="8_Better-than-expected"  />
+                        <span>Better than expected</span>
+                    </label>
+                </form>
+                </br>
+            <!-- Code for comments section -->
+            
+            </ol>
+        </br>
+            <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <textarea id="comments" class="materialize-textarea"></textarea>
+                      <label for="textarea1">Other comments</label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            <a class="waves-effect waves-light btn", id = "save">Save Results</a>
+
+        </div>
+    </div>
+    <script>
+        // Script to take the selected scores
+        $("#save").click(function(){
+            var doc = new jsPDF();
+            var name = $("#name").val();
+            var criteria = $(".criteria-form")
+            var numQuestions = criteria.length
+            var crit = $(".crit")
+            var comments = $("#comments").val()
+            var i
+            doc.text(20, 20, name + ": Feedback sheet")
+            doc.text(20, 30, "51368936: Functional History of Rheumatoid Arthritis")
+            doc.setFontSize(10)
+            var pageNotSplit = true
+            for (i = 0; i < numQuestions; i++){
+                if (i > 10 && pageNotSplit){
+                    doc.addPage()
+                    pageNotSplit = false
+                }
+                if(i > 10 && !pageNotSplit){
+                    doc.setTextColor(0)
+                    var question = doc.splitTextToSize(crit[i].innerText, 170)
+                    doc.text(25, 50 + (i-11) * 20, question)
+                    for (var j = 0; j < 4; j++){
+                        if (criteria[i][j].checked) {
+                            doc.setTextColor(0, 0, 255)
+                            doc.text(30, 60 + (i-11) * 20, criteria[i][j].id.split("_")[1].replace("-", " "))
+                            // console.log(criteria[i][j])
+                        }
+                    }
+                    
+                } else{
+                    doc.setTextColor(0)
+                    var question = doc.splitTextToSize(crit[i].innerText, 170)
+                    doc.text(25, 50 + i * 20, question)
+                    for (var j = 0; j < 4; j++){
+                        if (criteria[i][j].checked) {
+
+                            doc.setTextColor(0, 0, 255)
+                            doc.text(30, 60 + i * 20, criteria[i][j].id.split("_")[1].replace("-", " "))
+                            // console.log(criteria[i][j])
+                        }
+                    }
+                }
+            }
+            doc.addPage()
+            doc.setTextColor(0)
+            doc.text(20, 20, "Comments from the examiner")
+            doc.setTextColor(0, 0, 255)
+            var comm = doc.splitTextToSize(comments, 150)
+            doc.text(30, 30, comm)
+            doc.save(name + ".pdf")
+            location.reload()
+        })
+    </script>
+</body>
+</html>

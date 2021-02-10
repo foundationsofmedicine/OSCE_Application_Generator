@@ -44,8 +44,51 @@ def generate_actor_prompt_pages(item):
     savePage(htmlObj, "./public/" + item + "/actor_prompt/index.html")
     return
 
+
+def extractBySpeciality():
+    oscelist = pd.read_csv("./src/osce_map.csv")
+    gen = {}
+    msk = {}
+    resp = {}
+    haem = {}
+    cardio = {}
+    neuro = {}
+    renal = {}
+    gastro = {}
+    endo = {}
+    onc = {}
+    proc = {}
+    gen['id'] = oscelist.query('speciality=="gen"')['OSCE_ID'].tolist()
+    gen['title'] = oscelist.query('speciality=="gen"')['title'].tolist()
+    msk['id'] = oscelist.query('speciality=="msk"')['OSCE_ID'].tolist()
+    msk['title'] = oscelist.query('speciality=="msk"')['title'].tolist()
+    resp['id'] = oscelist.query('speciality=="resp"')['OSCE_ID'].tolist()
+    resp['title'] = oscelist.query('speciality=="resp"')['title'].tolist()
+    haem['id'] = oscelist.query('speciality=="haem"')['OSCE_ID'].tolist()
+    haem['title'] = oscelist.query('speciality=="haem"')['title'].tolist()
+    cardio['id'] = oscelist.query('speciality=="cardio"')['OSCE_ID'].tolist()
+    cardio['title'] = oscelist.query('speciality=="cardio"')['title'].tolist()
+    neuro['id'] = oscelist.query('speciality=="neuro"')['OSCE_ID'].tolist()
+    neuro['title'] = oscelist.query('speciality=="neuro"')['title'].tolist()
+    renal['id'] = oscelist.query('speciality=="renal"')['OSCE_ID'].tolist()
+    renal['title'] = oscelist.query('speciality=="renal"')['title'].tolist()
+    gastro['id'] = oscelist.query('speciality=="gastro"')['OSCE_ID'].tolist()
+    gastro['title'] = oscelist.query('speciality=="gastro"')['title'].tolist()
+    endo['id'] = oscelist.query('speciality=="endo"')['OSCE_ID'].tolist()
+    endo['title'] = oscelist.query('speciality=="endo"')['title'].tolist()
+    onc['id'] = oscelist.query('speciality=="onc"')['OSCE_ID'].tolist()
+    onc['title'] = oscelist.query('speciality=="onc"')['title'].tolist()
+    proc['id'] = oscelist.query('speciality=="proc"')['OSCE_ID'].tolist()
+    proc['title'] = oscelist.query('speciality=="proc"')['title'].tolist()
+
+    return gen, msk, resp, haem, cardio, neuro, endo, renal, gastro, onc, proc
+
 def generate_landing():
-    
+    gen, msk, resp, haem, cardio, neuro, endo, renal, gastro, onc, proc = extractBySpeciality()
+
+    page = env.get_template('landing_template.html')
+    htmlObj = page.render({'gen': gen, "msk": msk, "resp": resp, "haem": haem, "cardio": cardio, "neuro": neuro, "endo": endo, "renal": renal, "gastro": gastro, "onc": onc, "proc": proc })
+    savePage(htmlObj, "./public/index.html")
 
     return
 
