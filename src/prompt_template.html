@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSCE Prompt - {{ osce_id }}</title>
+</head>
+<style>
+    .prompt-box {
+        margin: 50px;
+    }
+    .history-component{
+        font-size: 20px;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <!-- Code for OSCE identifier -->
+    <h1>OSCE Exam ID: {{ osce_id }}</h1>
+    <h2>{{ user }}</h2>
+    <!-- Code for prompt -->
+    <div class="prompt-box">
+        <p>{% for item in prompt %}
+                {% if item[0] == "/" %}
+                    <div class = "history-component">{{ item.split("/")[1] }} </div>
+                {% elif item != "nan " %}
+                    {{item}} </br></br>
+                {% endif %}
+            {% endfor %}
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+﻿OSCE_ID,title,prompt,actor_prompt,examination_criteria
+1749174,Lower Back Pain History,You are the resident in the emergency department at an inner city hospital on Friday Night. Mr. King has come to see you complaining of an acute onset of back and leg pain.,/Patient task,Introduces self appropriately and obtains consent
+,,Please take a full history. Summarise your findings to the examiner at the end.,"Mr Charlie King, 22 years","Takes an appropriate history of the presenting symptom: Back pain - location, onset (sudden or gradual, after trauma?), character, radiating, duration, intensity, aggravating and relieving factors."
+,,,Sudden onset of stabbing back pain radiating down his left leg and into his foot,Inquires about sensory changes and muscle weakness.
+,,,Started one hour ago while dancing at a post exam party with his fellow university students.,Inquires specificially about bladder and bowel function.
+,,,"Rates the pain at 7/10, worse when walking",Inquires about previous back injuries and pain
+,,,Was lifting and twisting a friend around when the pain started.,Asks about functional impairment at work.
+,,,Is having difficulty moving his foot and complains of pins and needles that will no go away in his left leg (posterior).,"Inquires about previous medical conditions such as cancer, osteoporosis"
+,,,Has noticed a twinge in his back recently while running but put it down to his poor posture.,"Social history - Smoking, alcohol, recreational drugs, occupation, living circumstances, family and social supports"
+,,,Bladder function ok - hasn't experienced any incontinence yet.,Family history - Health of parents and siblings/cause of death
+,,,/PMHx,"Gives feedback to the patient at various points in the interview, and clarifies points made."
+,,,Has been hospitalised once - had his tonsils out (age 12),Good transition from one part of the interview to the next. Appropriate language used.
+,,,"Does exxercise regularly. Runs 30 minutes every 2 days, is an active member of the University ballroom dancing society.",Summarises history back to the examiner
+,,,No other medical problems,10/12 required for satisfactory result
+,,,No allergies,Additional question: What examinations would you perform?
+,,,/Medications,Additional question: What investigation would be most useful?
+,,,No medications taken,Additional question: How could you tell on examination the difference between an S1 radiculopathy and one at L5?
+,,,/Social history,
+,,,Part time university student (construction management),
+,,,Works part time as a manual labourer on a building site on the weekends,
+,,,Doesn't smoke,
+,,,"Moderate alcohol intake - 20 standard drinks/week (beer), 3-4 alcohol free days. Admits to binge drinking 1-2 nights per week.",
+,,,"Lives alone on the 5th floor of a share house in Paddington. 5 flights of stairs, no lift",
+,,,/Family history,
+,,,Family lives in Coolongolook and thus are not able to support him or help him out at home.,
+,,,Had an older brother who died in a car accident 3 years ago.,
+,,,No other significant family history.,
