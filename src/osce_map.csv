@@ -1,5 +1,12 @@
 OSCE_ID,title,speciality
-20000001,Cough History 1,resp
+10000000,Functional History of Rheumatoid Arthritis,msk
+10000001,Lower Back Pain History,msk
+10000002,Polyarthralgia history (Rheumatoid arthritis),msk
+10000003,"GALS (Gait, Arms, Legs, Spine) screen",msk
+10000004,Hand exam,msk
+10000005,Shoulder exam,msk
+10000006,Lower back exam,msk
+10000007,Hip exam,msk
+10000008,Knee exam,msk
 20000000,Respiratory Exam,resp
-10000000,Functional History of Rheumatoid Arthritis,gen
-10000001,Lower Back Pain History,gen
+20000001,Cough History 1,resp

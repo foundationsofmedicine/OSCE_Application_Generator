@@ -91,7 +91,7 @@ def extractBySpeciality():
 
 def generate_landing():
     gen, msk, resp, haem, cardio, neuro, endo, renal, gastro, onc, proc = extractBySpeciality()
-
+    print(len(msk['id']))
     page = env.get_template('landing_template.html')
     htmlObj = page.render({'gen': gen, "msk": msk, "resp": resp, "haem": haem, "cardio": cardio, "neuro": neuro, "endo": endo, "renal": renal, "gastro": gastro, "onc": onc, "proc": proc })
     savePage(htmlObj, "./public/index.html")
