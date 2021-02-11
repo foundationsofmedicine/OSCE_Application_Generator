@@ -1,5 +1,5 @@
 ﻿OSCE_ID,title,prompt,actor_prompt,examination_criteria
-1749174,Lower Back Pain History,You are the resident in the emergency department at an inner city hospital on Friday Night. Mr. King has come to see you complaining of an acute onset of back and leg pain.,/Patient task,Introduces self appropriately and obtains consent
+10000001,Lower Back Pain History,You are the resident in the emergency department at an inner city hospital on Friday Night. Mr. King has come to see you complaining of an acute onset of back and leg pain.,/Patient task,Introduces self appropriately and obtains consent
 ,,Please take a full history. Summarise your findings to the examiner at the end.,"Mr Charlie King, 22 years","Takes an appropriate history of the presenting symptom: Back pain - location, onset (sudden or gradual, after trauma?), character, radiating, duration, intensity, aggravating and relieving factors."
 ,,,Sudden onset of stabbing back pain radiating down his left leg and into his foot,Inquires about sensory changes and muscle weakness.
 ,,,Started one hour ago while dancing at a post exam party with his fellow university students.,Inquires specificially about bladder and bowel function.

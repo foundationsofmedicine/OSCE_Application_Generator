@@ -1,0 +1,15 @@
+﻿OSCE_ID,title,prompt,actor_prompt,examination_criteria,contributor
+20000000,Respiratory Exam,The patient is complaining of shortness of breath and a.productive cough. Examine the patients respiratory system focusing on the examination of the chest. ,/Patient Task,Introduces self appropriately and establishes a rapport with the patient. ,Omar Hassan
+,,,You have a cough and shortness of breath.,"Positions patients correctly, removes appropriate garments (sitting on edge of bed and undressed from waist upwards). ",
+,,,,"General inspection - sputum, cough, respiratory rate, and use of accessory muscles. ",
+,,,,"Hands (names 3 or 4) - clubbing, cyanosis, nicotine stains, wasting/weakness (abduction/adduction), wrist tenderness (HPOA), pulse and flapping tremor. ",
+,,,,"Face - eyes (Horner’s), mouth (cyanosis), and voice(hoarseness)",
+,,,,Trachea - midline and tracheal tug,
+,,,,"Inspection of chest - respiratory rate, accessory muscles of respiration, shape of chest and spine, expansion, scars, and prominent veins (direction of flow). ",
+,,,,"Palpate - cervical lymph nodes, supraclavicular lymph nodes, expansion and vocal fremitus. ",
+,,,,"Percuss - patients should be asked to bring their elbows together to get the scapulae out of the way, supraclavicular region, and back/axillae.",
+,,,,"Auscultate - patients should be asked to breathe through the mouth, breath sounds, adventitious sounds and vocal resonance. A logical pattern of auscultation should be used. Sides should be compared. ",
+,,,,Pemberton’s Sign - does not need to wait the full minute. ,
+,,,,"Mentions cardiovascular exam, JVP, FVC and temperature.",
+,,,,Additional Question: What is Pemberton’s Sign?,
+,,,,Additional Question: What is a likely cause of Horner’s syndrome in a respiratory patient?,
