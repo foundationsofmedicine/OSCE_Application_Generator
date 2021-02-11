@@ -30,8 +30,8 @@
 <body>
     <!-- Code for Navigation bar -->
     <nav>
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo right">Foundations of Clinical Medicine</a>
+        <div class="nav-wrapper grey darken-2" >
+          <a href="../" class="brand-logo right" style="margin-right: 10px">Foundations of Clinical Medicine</a>
           <ul id="nav-mobile" class="left hide-on-med-and-down">
             <li><a href="sass.html">Home</a></li>
             <li><a href="badges.html">Basic Clinical Sciences</a></li>
@@ -39,7 +39,7 @@
           </ul>
         </div>
       </nav>
-      <nav>
+      <!-- <nav>
         <div class="nav-wrapper">
           <div class="col s12">
             <a href="../../.." class="breadcrumb">Foundations of Medicine</a>
@@ -48,9 +48,11 @@
             <a href="/" class="breadcrumb">{{osce_id}}: {{title[0]}}</a>
           </div>
         </div>
-      </nav>
+      </nav> -->
     <div class="page_details container">
             <!-- Code for OSCE Identifier -->
+        <br/>   
+        <a class="waves-effect waves-light btn-small teal accent-4" href="../">Back to OSCE list</a>
         <h1>OSCE ID: {{osce_id}}</h1>
         <!-- Code for Student name -->
         <input placeholder="Student Name" id="name" type="text" class="validate">
@@ -123,8 +125,8 @@
                 </form>
               </div>
             <a class="waves-effect waves-light btn", id = "save">Save Results</a>
-
         </div>
+        <p>Contributor: {{contributor}}</p> <br/>
     </div>
     <script>
         // Script to take the selected scores

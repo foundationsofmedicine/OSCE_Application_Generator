@@ -23,10 +23,16 @@ def loadOSCEdata(osce_id):
     examination_criteria = [i for i in examination_criteria if str(i) != 'nan']
     return osce_id, title, prompt, actor_prompt, examination_criteria
 
+ID_name = {
+    "1": "WL",
+    "2": "OAMH"
+}
+
 def generate_examiner_pages(item):
     osce_id, title, prompt, actor_prompt, examination_criteria = loadOSCEdata(item)
+    contributor = ID_name.get(osce_id[0])
     page = env.get_template('examiner_template.html')
-    htmlObj = page.render({'osce_id': osce_id, 'title': title, 'criteria': examination_criteria})
+    htmlObj = page.render({'osce_id': osce_id, 'title': title, 'criteria': examination_criteria, 'contributor': contributor})
     savePage(htmlObj, "./public/" + item + "/index.html")
     return
 
