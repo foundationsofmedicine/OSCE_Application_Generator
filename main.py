@@ -1,6 +1,7 @@
 from OSCEgen import fileIO
 from OSCEgen import generateQR as gqr
 from OSCEgen import generatepages as gp
+from OSCEgen import copyfiles as cf
 
 
 # VARIABLES GO HERE
@@ -24,3 +25,4 @@ for item in OSCE_list:
 
 gp.generate_landing()
 # gp.generate_randomiser()
+cf.copypublic("./public", "../foundationsofmedicine.github.io/clinicalmedicine/OSCE")

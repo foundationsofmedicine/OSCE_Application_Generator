@@ -10,3 +10,32 @@ OSCE_ID,title,speciality
 10000008,Knee exam,msk
 20000000,Respiratory Exam,resp
 20000001,Cough History 1,resp
+30000000,Anaemia history,haem
+50000001,Chest Pain History,cardio
+50000002,Peripheral Vascular Disease History,cardio
+50000003,Cardiovascular Examination 1,cardio
+20000002,Cough History 2,resp
+50000004,Cardiovascular Examination 2,cardio
+50000005,Epilepsy History,neuro
+50000006,Stroke History,neuro
+50000007,Dizziness History,neuro
+20000003,Occupartional History,resp
+20000004,Ear Exam 1,resp
+20000005,Ear Exam 2,resp
+50000008,Headache Histroy 1,neuro
+50000009,Headache History 2,neuro
+40000001,Deep Tendon and Babinski Exam,neuro
+10000009,Cancer Pain History,onc
+10000010,Breast Examination,onc
+10000011,Medication history,gen
+10000012,Past medical history,gen
+10000013,General Paediatric history,paed
+10000014,Developmental Paediatric History 1,paed
+10000015,Developmental Paediatric History 2,paed
+10000016,Paediatric Nutritional History,paed
+10000017,Paediatric Diarrhoea History 1,paed
+10000018,Paediatric Diarrhoea History 2,paed
+50000010,Headache History 3,neuro
+50000011,Parkinson's Disease History,neuro
+60000001,Basic Life Support,proc
+50000012,Alzheimer's Disease History,neuro

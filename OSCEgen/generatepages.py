@@ -25,7 +25,11 @@ def loadOSCEdata(osce_id):
 
 ID_name = {
     "1": "WL",
-    "2": "OAMH"
+    "2": "OAMH",
+    "3": "KATN",
+    "4": "JD",
+    "5": "SJW",
+    "6": "AY"
 }
 
 def generate_examiner_pages(item):
@@ -64,6 +68,8 @@ def extractBySpeciality():
     endo = {}
     onc = {}
     proc = {}
+    ong = {}
+    paed = {}
     gen['id'] = oscelist.query('speciality=="gen"')['OSCE_ID'].tolist()
     gen['title'] = oscelist.query('speciality=="gen"')['title'].tolist()
     msk['id'] = oscelist.query('speciality=="msk"')['OSCE_ID'].tolist()
@@ -86,14 +92,18 @@ def extractBySpeciality():
     onc['title'] = oscelist.query('speciality=="onc"')['title'].tolist()
     proc['id'] = oscelist.query('speciality=="proc"')['OSCE_ID'].tolist()
     proc['title'] = oscelist.query('speciality=="proc"')['title'].tolist()
+    paed['id'] = oscelist.query('speciality=="paed"')['OSCE_ID'].tolist()
+    paed['title'] = oscelist.query('speciality=="paed"')['title'].tolist()
+    ong['id'] = oscelist.query('speciality=="ong"')['OSCE_ID'].tolist()
+    ong['title'] = oscelist.query('speciality=="ong"')['title'].tolist()
 
-    return gen, msk, resp, haem, cardio, neuro, endo, renal, gastro, onc, proc
+    return gen, msk, resp, haem, cardio, neuro, endo, renal, gastro, onc, proc, paed, ong
 
 def generate_landing():
-    gen, msk, resp, haem, cardio, neuro, endo, renal, gastro, onc, proc = extractBySpeciality()
+    gen, msk, resp, haem, cardio, neuro, endo, renal, gastro, onc, proc, paed, ong = extractBySpeciality()
     print(len(msk['id']))
     page = env.get_template('landing_template.html')
-    htmlObj = page.render({'gen': gen, "msk": msk, "resp": resp, "haem": haem, "cardio": cardio, "neuro": neuro, "endo": endo, "renal": renal, "gastro": gastro, "onc": onc, "proc": proc })
+    htmlObj = page.render({'gen': gen, "msk": msk, "resp": resp, "haem": haem, "cardio": cardio, "neuro": neuro, "endo": endo, "renal": renal, "gastro": gastro, "onc": onc, "proc": proc, "paed": paed, "ong": ong })
     savePage(htmlObj, "./public/index.html")
 
     return

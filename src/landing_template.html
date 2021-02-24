@@ -14,6 +14,16 @@
     }
 </style>
 <body>
+    <nav>
+        <div class="nav-wrapper grey darken-2" >
+          <a href="../../" class="brand-logo right" style="margin-right: 10px">Foundations of Clinical Medicine</a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="../../">Home</a></li>
+            <li><a href="../../basicscience">Basic Clinical Sciences</a></li>
+            <li><a href="../">Clinical Medicine</a></li>
+          </ul>
+        </div>
+      </nav>
     <div class="container">
         <h1>OSCE Bank</h1>
         <h4>About</h4>
@@ -110,6 +120,24 @@
                 <ul>
                     {%for i in range(onc['id']|length) %}
                         <li><a href="./{{onc['id'][i]}}">{{onc['title'][i]}}</a></li>
+                    {% endfor %}
+                </ul>
+
+            </div>
+            <div class="paediatrics">
+                <h5>Paediatric exams</h5>
+                <ul>
+                    {%for i in range(paed['id']|length) %}
+                        <li><a href="./{{paed['id'][i]}}">{{paed['title'][i]}}</a></li>
+                    {% endfor %}
+                </ul>
+
+            </div>
+            <div class="obstetricsandgynae">
+                <h5>Obstetrics and Gynaecology exams</h5>
+                <ul>
+                    {%for i in range(ong['id']|length) %}
+                        <li><a href="./{{ong['id'][i]}}">{{ong['title'][i]}}</a></li>
                     {% endfor %}
                 </ul>
 
